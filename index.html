@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Wisdom Health</title>
+    <style>
+        body {
+            font-family: GT Super Display;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+    <div class="bg-slate-100">
+        <header class="absolute inset-x-0 top-0 z-50">
+            <div class="bg-[#1F4D36] p-5">
+                <p class="text-[1.25rem] hidden lg:block font-medium  text-center  text-[#F2F4EA] fixed-top">Get your
+                    first  visit  doctor for 127$</p>
+            </div>
+
+            <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8  border-b-1 border-[#1F4D36]">
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img src="assets/images/Logo.png" alt="" class="h-8 w-auto" />
+                    </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button" command="show-modal" commandfor="mobile-menu"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 ">
+                        <span class="sr-only">Open main menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-5">
+                    <a href="#" class="text-sm/6 font-meduim text-[1.25rem] text-[#1F4D36]">Women’s Health Tune Up</a>
+                    <a href="#" class="text-sm/6 font-meduim text-[1.25rem] text-[#1F4D36]">About us</a>
+
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <a href="#"
+                        class="text-sm/6 font-semibold text-[#1F4D36] italic border-2 border-solid border-[#1F4D36]  px-4 py-1 rounded-[40px]">Find
+                        Your Doctor <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </nav>
+            <el-dialog>
+                <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                    <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                        <el-dialog-panel
+                            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                            <div class="flex items-center justify-between">
+                                <a href="#" class="-m-1.5 p-1.5">
+                                    <span class="sr-only">Your Company</span>
+                                    <img src="assets/images/Logo.png" alt="" class="h-8 w-auto" />
+                                </a>
+                                <button type="button" command="close" commandfor="mobile-menu"
+                                    class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                    <span class="sr-only">Close menu</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6">
+                                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mt-6 flow-root">
+                                <div class="-my-6 divide-y divide-white/10">
+                                    <div class="space-y-2 py-6">
+                                        <a href="#"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Women’s
+                                            Health Tune Up</a>
+                                        <a href="#"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">About
+                                            us</a>
+                                    </div>
+                                    <div class="py-6">
+                                        <a href="#"
+                                            class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Find
+                                            Your Doctor</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </el-dialog-panel>
+                    </div>
+                </dialog>
+            </el-dialog>
+        </header>
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+            <div class=" py-32 sm:py-48 lg:py-56">
+                <div class=" flex items-center justify-center lg:justify-between ">
+                    <div class="header__content  w-full lg:w-1/2">
+                        <h1 class="text-[4rem] lg:text-[6rem] font-bold text-[#1F4D36] leading-tight">
+                            Healthcare When All Else Fails
+                            <span class="inline-block align-middle">
+                                <img src="assets/images/Flower.svg" alt="" class="w-12 lg:w-16 inline-block" />
+                            </span>
+                        </h1>
+
+                        <p class="mt-8 text-[1.25rem] font-normal text-[#1F4D36]  sm:text-xl/8">First-Class,
+                            women-centric care for hormone issues & autoimmunity. Get fully-integrative care from a
+                            holistic doctor and nutritionist for $175/month.
+                        </p>
+                        <div class="mt-10 flex items-center  gap-x-6">
+                            <a href="#"
+                                class="text-sm/6 font-semibold text-[#C7D3C4] italic bg-[#1F4D36]  px-4 py-1 rounded-[40px]">Find
+                                Your Doctor</a>
+                            <a href="#"
+                                class="text-sm/6 font-semibold text-[#1F4D36] italic border-2 border-solid border-[#1F4D36]  px-4 py-1 rounded-[40px]">Learn
+                                more <span aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="header__img hidden lg:block">
+                        <img src="assets/images/Big Img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="treatment bg-[#1F4D36] p-10">
+        <div class="container">
+            <div class="treatment__header py-6">
+                <h2 class=" text-[3rem] lg:text-[4.5rem] font-bold text-[#F2F4EA] text-center">Conditions We Treat</h2>
+                <p class="text-[1.25rem] font-medium text-[#F2F4EA] text-center">We treat a wide range of hormone issues
+                    and autoimmune diseases</p>
+            </div>
+            <div class="treatment__boxes flex flex-wrap items-center justify-between text-[#F2F4EA]">
+                <div class="treatment__box w-[100%] md:w-[50%] lg:w-[30%] flex flex-col  items-center py-5">
+                    <img src="assets/images/Disease.png" alt="" class="py-5">
+                    <h3 class="text-[1.5625rem] font-semibold ">Hormone Issues</h3>
+                    <a class="text-[1.25rem] font-medium text-[#F2F4EA] underline">Learn more <span
+                            aria-hidden="true">&#8599;</span></a>
+                </div>
+                <div class="treatment__box w-[100%] md:w-[50%] lg:w-[30%] flex flex-col  items-center py-5">
+                    <img src="assets/images/Disease (1).png" alt="" class="py-5">
+                    <h3 class="text-[1.5625rem] font-semibold ">Hormone Issues</h3>
+                    <a class="text-[1.25rem] font-medium text-[#F2F4EA] underline">Learn more <span
+                            aria-hidden="true">&#8599;</span></a>
+                </div>
+                <div class="treatment__box w-[100%] md:w-[50%] lg:w-[30%] flex flex-col  items-center py-5">
+                    <img src="assets/images/Disease (2).png" alt="" class="py-5">
+                    <h3 class="text-[1.5625rem] font-semibold ">Hormone Issues</h3>
+                    <a class="text-[1.25rem] font-medium text-[#F2F4EA] underline">Learn more <span
+                            aria-hidden="true">&#8599;</span></a>
+                </div>
+                <div class="treatment__box w-[100%] md:w-[50%] lg:w-[30%] flex flex-col  items-center py-5">
+                    <img src="assets/images/Disease (2).png" alt="" class="py-5">
+                    <h3 class="text-[1.5625rem] font-semibold ">Hormone Issues</h3>
+                    <a class="text-[1.25rem] font-medium text-[#F2F4EA] underline">Learn more <span
+                            aria-hidden="true">&#8599;</span></a>
+                </div>
+                <div class="treatment__box w-[100%] md:w-[50%] lg:w-[30%] flex flex-col  items-center py-5">
+                    <img src="assets/images/Disease (1).png" alt="" class="py-5">
+                    <h3 class="text-[1.5625rem] font-semibold ">Hormone Issues</h3>
+                    <a class="text-[1.25rem] font-medium text-[#F2F4EA] underline">Learn more <span
+                            aria-hidden="true">&#8599;</span></a>
+                </div>
+                <div class="treatment__box w-[100%] md:w-[50%] lg:w-[30%] flex flex-col  items-center py-5">
+                    <img src="assets/images/Disease.png" alt="" class="py-5">
+                    <h3 class="text-[1.5625rem] font-semibold ">Hormone Issues</h3>
+                    <a class="text-[1.25rem] font-medium text-[#F2F4EA] underline">Learn more <span
+                            aria-hidden="true">&#8599;</span></a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</body>
+
+</html>
